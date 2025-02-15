@@ -52,7 +52,7 @@
 
         async function fetchExistingData() {
             try {
-                const response = await fetch('https://script.google.com/macros/s/AKfycbzfHRS1G7ffvbjvLek_uWBP8TBI1_wh0O7bHXt_uyNO2GiuAIi5OAnnnW3oKMDXFBH5kw/exec?action=getData');
+                const response = await fetch('https://script.google.com/macros/s/AKfycbyjjh0fiz_3b4vFGhzaHBWwfDvbGxECGnypEx36U0jKNMEBxtOLLaPIjWNn892d0baBXw/exec?action=getData');
                 const data = await response.json();
                 if (data.status === 'success') {
                     existingData = data.data;
@@ -111,7 +111,7 @@
             const updatedScreenshots = screenshots.filter(screenshot => screenshot !== url);
             
             try {
-                const response = await fetch('https://script.google.com/macros/s/AKfycbzfHRS1G7ffvbjvLek_uWBP8TBI1_wh0O7bHXt_uyNO2GiuAIi5OAnnnW3oKMDXFBH5kw/exec', {
+                const response = await fetch('https://script.google.com/macros/s/AKfycbyjjh0fiz_3b4vFGhzaHBWwfDvbGxECGnypEx36U0jKNMEBxtOLLaPIjWNn892d0baBXw/exec', {
                     method: 'POST',
                     body: JSON.stringify({
                         action: 'updateScreenshots',
@@ -138,7 +138,7 @@
             const updatedUrls = urls.filter(u => u !== url);
             
             try {
-                const response = await fetch('https://script.google.com/macros/s/AKfycbzfHRS1G7ffvbjvLek_uWBP8TBI1_wh0O7bHXt_uyNO2GiuAIi5OAnnnW3oKMDXFBH5kw/exec', {
+                const response = await fetch('https://script.google.com/macros/s/AKfycbyjjh0fiz_3b4vFGhzaHBWwfDvbGxECGnypEx36U0jKNMEBxtOLLaPIjWNn892d0baBXw/exec', {
                     method: 'POST',
                     body: JSON.stringify({
                         action: 'updateSocial',
@@ -289,7 +289,7 @@
             };
 
             try {
-                const response = await fetch('https://script.google.com/macros/s/AKfycbzfHRS1G7ffvbjvLek_uWBP8TBI1_wh0O7bHXt_uyNO2GiuAIi5OAnnnW3oKMDXFBH5kw/exec', {
+                const response = await fetch('https://script.google.com/macros/s/AKfycbyjjh0fiz_3b4vFGhzaHBWwfDvbGxECGnypEx36U0jKNMEBxtOLLaPIjWNn892d0baBXw/exec', {
                     method: 'POST',
                     body: JSON.stringify(data)
                 });
